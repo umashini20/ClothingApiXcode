@@ -14,7 +14,22 @@ const productSchema = new Schema({
     type: Number,
     require: true
   },
-  description: String
+  description: String,
+
+  category: {
+    id: {
+      type: String,
+      required: true
+    },
+    name: {
+      type: String,
+      required: true
+    },
+    imageUrl: {
+      type: String,
+      required: true
+    }
+  }
   
 }
 );
