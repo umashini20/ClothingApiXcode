@@ -52,7 +52,7 @@ app.post('/api/v1/products', async (req, res) => {
         const product = new ProductModel({
             name, imageUrl, price, description,category
         })
-        if (!category || !category.id || !category.name || !category.imageUrl) {
+        if (!category || !category.cid || !category.catname || !category.catimageUrl) {
             return res.status(400).json({
                 msg: 'Category data is incomplete. Please provide id, name, and imageUrl.'
             });
