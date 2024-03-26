@@ -17,18 +17,8 @@ const productSchema = new Schema({
   description: String,
 
   category: {
-    cid: {
-      type: String,
-      required: true
-    },
-    catname: {
-      type: String,
-      required: true
-    },
-    catimageUrl: {
-      type: String,
-      required: true
-    }
+     type: String,
+     require: true
   }
   
 }
